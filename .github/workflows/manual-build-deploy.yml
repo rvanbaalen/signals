@@ -8,9 +8,9 @@ on:
     # Optional inputs for the workflow
     inputs:
       environment:
-        description: 'Environment to deploy to'
+        description: Environment to deploy to
         required: true
-        default: 'github-pages'
+        default: github-pages
         type: choice
         options:
           - github-pages
@@ -31,8 +31,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version-file: 'package.json'
-          cache: 'npm'
+          node-version-file: package.json
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
@@ -46,7 +46,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: ./dist
 
   # Deployment job
   deploy:
