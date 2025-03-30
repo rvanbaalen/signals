@@ -1,7 +1,7 @@
 {
   "name": "@rvanbaalen/signals",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, decoupled pub/sub signal system for building reactive web applications with organized state management and clean component communication.",
   "author": "Robin van Baalen",
   "license": "MIT",
